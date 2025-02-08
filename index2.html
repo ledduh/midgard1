@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peppering Construction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            overflow-x: hidden; 
+        }
+
+        section {
+            position: relative;
+            height: 50vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white; 
+            background-size: cover;
+            background-attachment: fixed; 
+            background-position: center;
+        }
+
+        section h2  {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            max-width: 600px; 
+            text-align: justify;
+            line-height: 1.5;
+            padding: 0 20px; 
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        
+        #section1 {
+            background-image: url('logo.png');
+        }
+
+        #section2 {
+            background-image: url('logo.png'); 
+        }
+
+        #section3 {
+            background-image: url('logo.png'); 
+        }
+
+        #section4 {
+            background-image: url('3rd.png'); 
+        }
+
+        
+        section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2); 
+        }
+
+        section > * { 
+            z-index: 1; 
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Push footer to the bottom */
+            z-index: 1; /* Ensure footer is above parallax sections */
+        }
+
+
+        footer a {
+            color: lightgreen;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="section1">
+        <h2  style = "color: #c89237; font-size: 50px;"><strong>Peppering Construction</strong></h2 >
+        <p style="font-size: 30px;"><i>Build your dreams with us.</i></p>
+    </section>
+
+    <section id="section2">
+        <h2 style="color: #c89237;" >Company Overview</h2 >
+        <p>We’re Peppering - a leading construction company delivering infrastructure development
+            projects across the built environment in Kenya and surrounding regions.</p>
+        <p>Established about a decade ago, this multidisciplinary company has a proven track record for quality project delivery on time and
+            within budget. Peppering is committed to safe, timeous, high quality, innovative and cost effective construction.</p>
+    </section>
+
+    <section id="section3">
+        <h2 style="color: #c89237;" >What We Do</h2 >
+        <p>Delivering major infrastructure and buildings design, drawing on a decade of
+            specialist experience in complex and sustainable projects, large and small.</p>
+
+        <p>At Peppering Limited, we offer a comprehensive range of construction and engineering services designed to bring your
+            vision to life. Whether you’re planning a residential project, commercial development, or large-scale infrastructure, we
+            ensure quality craftsmanship and on-time delivery.</p>
+    </section>
+
+    <section id="section4">
+        <h2 style="color: #c89237;"><strong>Our Approach: Precision, Partnership and Excellence</strong></h2 >
+        <p>At Peppering, our approach is guided by a commitment to delivering exceptional results through innovation, collaboration, and
+            meticulous execution.</p>
+    </section>
+    <footer>
+        &copy; 2025 Peppering Construction. All rights reserved. | <a href="https://wa.me/+254729423363">Made by Midgard Communications</a>
+    </footer>
+
+</body>
+</html>
